@@ -34,3 +34,5 @@ curl --noproxy '*' --resolve demo.lab:30080:192.168.119.65 \
 从浏览器访问 `http://demo.lab:30080/`，需要让浏览器所在主机把 `demo.lab` 解析到可用节点 IP，并对该域名绕过代理。当前镜像的 commit 值为手工验证用的 `local`；接入 Jenkins 后会替换成真实 Git commit。
 
 以后由 Jenkins 把版本与 commit 写入镜像、推送 Harbor，再更新 GitOps 仓库中的镜像标签；Argo CD 根据 GitOps 仓库部署。当前 `k8s/demo.yaml` 是手工验证清单，还没有交给 Argo CD 管理。
+
+Multibranch webhook verification

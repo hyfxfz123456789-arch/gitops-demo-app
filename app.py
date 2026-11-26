@@ -33,7 +33,7 @@ class Handler(BaseHTTPRequestHandler):
                 "margin:4rem auto;padding:0 1rem;line-height:1.7}"
                 "code{background:#eef;padding:.2rem .4rem;border-radius:.3rem}</style>"
                 "<h1>GitOps Demo</h1>"
-                "<p>新版本先在 lab 验证，再经 MR 发布到 staging。</p>"
+                "<p>已通过最终镜像启动测试。</p>"
                 f"<p>版本：<code>{html.escape(VERSION)}</code></p>"
                 f"<p>Git commit：<code>{html.escape(COMMIT)}</code></p>"
                 f"<p>运行 Pod：<code>{html.escape(POD)}</code></p>"
